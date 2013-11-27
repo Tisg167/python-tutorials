@@ -8,6 +8,7 @@ They're helpful for describing your program.
 This is the top level.
 Variables declared in the top level exist for all lower levels.
 """
+import time # import another module/library
 something = 10 # crunches are used for single line comments
 def print_global_variable():
   print('something = ' + str(something)) # print can print strings concatenated with +
@@ -38,11 +39,11 @@ def for_n_times(number):
 # This is anther function
 def if_n_is_condition(n,m):
   if (n > m):
-    print('First is LARGER than the second')
+    print('num1 > num2')
   elif (n < m):
-    print('First is SMALL than the second')
+    print('num1 < num2')
   else:
-    print('First is EQUAL TO the second')
+    print('num1 == num2')
 
 # Code that comes after function(s) can use those functions
 n = ask_for_number()
@@ -50,5 +51,6 @@ display(n)
 m = ask_for_number()
 for_n_times(n)
 if_n_is_condition(n,m)
+time.sleep(4)
 
 
